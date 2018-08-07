@@ -46,7 +46,7 @@ Genetic algorithm for function maximization
   
   #### Generation 10  
   ![Generation 10](https://github.com/bartas28/functionMaximize/blob/master/results/gen10.png)  
-  Every unit manage to find local function maximum. To escape thsi situation there must be lucky mutation.  
+  Every unit managed to find local function maximum. To escape this situation there must be lucky mutation.  
   
   #### Generation 15 (Best val: 1.95020379511 best x: -4.04105571848 avg: 1.54520806638)  
   ![Generation 15](https://github.com/bartas28/functionMaximize/blob/master/results/gen15.png)  
@@ -74,8 +74,8 @@ Genetic algorithm for function maximization
   ![Generation 26](https://github.com/bartas28/functionMaximize/blob/master/results/gen26.png)  
   
   #### Generation 27 (Best val: 1.96278793785 best x: -4.07624633431 avg: 1.95809609464)  
-  ![Generation 27](https://github.com/bartas28/functionMaximize/blob/master/results/gen27.png) 
-  So it happened. Every unit got to the best slope.
+  ![Generation 27](https://github.com/bartas28/functionMaximize/blob/master/results/gen27.png)  
+  So it happened. Every unit got to the best slope.  
   
   #### Generation 28  
   ![Generation 28](https://github.com/bartas28/functionMaximize/blob/master/results/gen28.png)  
