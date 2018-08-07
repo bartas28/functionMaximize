@@ -9,7 +9,7 @@ Steps:
 
 Example:  
   representation - 10b number  
-  population = 1000  
+  population = 30  
   mutation probability = 0.01 (for each bit)  
     
 Results:  
