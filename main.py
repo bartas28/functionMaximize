@@ -4,8 +4,8 @@ import math
 import matplotlib.pyplot as plt
 
 BYTE_LENGTH = 10
-LEFT_X = -10
-RIGHT_X = 10
+LEFT_X = -5
+RIGHT_X = 4
 
 
 def maxValue(x):
@@ -101,8 +101,9 @@ def evalPop(pop):
 
 
 random.seed()
-popSize = 1000
+popSize = 30
 mutationProb = 0.01
+generations = 50
 avgs = []
 bests = []
 pop = createPop(popSize)
@@ -111,8 +112,8 @@ y_fun = []
 x_fun = np.arange(LEFT_X, RIGHT_X, 0.01)
 for x in x_fun:
     y_fun.append(function(x))
-for i in range(150):
-    print "\n--- generation " + str(i) + " ---"
+for i in range(50):
+    print "\n--- generation " + str(i + 1) + " ---"
     select(pop)
     crossPop(pop, popSize)
     mutatePop(pop, mutationProb)
@@ -127,9 +128,11 @@ for i in range(150):
     for creature in pop:
         plotX.append(toDec(creature))
         plotY.append(eval(creature))
-    if 1:
-        if i % 5 == 0:
-            plt.plot(plotX, plotY, 'bo', x_fun, y_fun, 'k')
-            plt.show()
+    plt.figure()
+    plt.plot(plotX, plotY, 'bo', x_fun, y_fun, 'k')
+    plt.savefig('results/gen' + str(i + 1) + '.png')
+    plt.close()
+plt.figure()
 plt.plot(avgs, 'k')
-plt.show()
+plt.savefig('results/averages.png')
+plt.close()
