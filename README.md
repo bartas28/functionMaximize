@@ -10,7 +10,9 @@ Genetic algorithm for function maximization
 ## Example:  
   representation - 10b number  
   population = 30  
-  mutation probability = 0.01 (for each bit)  
+  mutation probability = 0.01 (for each bit)
+  function = 0.3 * sin(x) + sin(1.3 * x) + 0.9 * sin(4.2 * x)
+  interval = <-5, 4>
     
 ## Results:  
   #### Average population score:  
