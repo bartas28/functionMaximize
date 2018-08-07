@@ -13,7 +13,7 @@ Genetic algorithm for function maximization
   mutation probability = 0.01 (for each bit)  
     
 ## Results:  
-  Average population score:  
+  #### Average population score:  
   ![Average score](https://github.com/bartas28/functionMaximize/blob/master/results/averages.png)  
   
   #### Generation 1 (Best val: 1.53702158431 best x: 0.472140762463 avg: 0.336649064865)   
